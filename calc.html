@@ -4,18 +4,21 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <input id="int1"type="text" name="" value="">
-  <input id="int2"type="text" name="" value="">
-  <button type="button" name="button">計算する</button>
-  
+
+
   <body>
+    <input id="int1"type="text" name="" value="">
+    <input id="int2"type="text" name="" value="">
+    <button onclick="keisan()" type="button" name="button">計算する</button>
     <script type="text/javascript">
+    function keisan(){
       var prompt_a = prompt("一つ目の数を入れて下さい");
       var prompt_b = prompt("二つ目の数を入れて下さい");
 
       var result = parseInt(prompt_a) + parseInt(prompt_b);
 
       alert(result);
+    }
     </script>
   </body>
 </html>
