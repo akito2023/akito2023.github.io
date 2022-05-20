@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media="screen">
+  img{width:80%;}
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <<script type="text/javascript">
+      count = 0;
+      function cookie_click() {
+        span = document.getElementById('count')
+        count++;
+        span.textContent = count;
+      }
+      function granma(){
+        setInterval(autoCountUp,1000);
+      }
+
+      function autoCountUp() {
+  count += 1;
+  span = document.getElementById('count')
+  span.textContent = count;
+}
+        </script>
+    <p><span id="count"></span>枚</p>
+    <img onclick="cookie_click()"src="ose.jpg" alt="">
+    <ul>
+      <li onclick="granma()">グランマ</li>
+      <li>ファーム</li>
+      <li></li>
+    </ul>
+  </body>
+</html>
